@@ -1,0 +1,59 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* survey_ventas_crm
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-24 10:35+0000\n"
+"PO-Revision-Date: 2015-07-24 10:35+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: survey_ventas_crm
+#: model:survey.page,title:survey_ventas_crm.sale_crm_page04
+msgid "CRM: Aftersale"
+msgstr "CRM: Aftersale"
+
+#. module: survey_ventas_crm
+#: model:survey.page,title:survey_ventas_crm.sale_crm_page03
+msgid "CRM: Presale"
+msgstr "CRM: Presale"
+
+#. module: survey_ventas_crm
+#: model:survey.page,title:survey_ventas_crm.sale_crm_page06
+msgid "Pricelists, Offers and Special Discounts"
+msgstr "Pricelists, Offers and Special Discounts"
+
+#. module: survey_ventas_crm
+#: model:survey.page,title:survey_ventas_crm.sale_crm_page01
+msgid "Sale: Clients"
+msgstr "Maestros de Ventas: Clientes"
+
+#. module: survey_ventas_crm
+#: model:survey.page,title:survey_ventas_crm.sale_crm_page02
+msgid "Sale: Products"
+msgstr "Maestros de Ventas: Productos"
+
+#. module: survey_ventas_crm
+#: model:survey.survey,title:survey_ventas_crm.sale_crm_survey
+msgid "Sales & CRM"
+msgstr "Ventas y CRM"
+
+#. module: survey_ventas_crm
+#: model:survey.page,title:survey_ventas_crm.sale_crm_page05
+#: model:survey.page,title:survey_ventas_crm.sale_crm_page08
+#: model:survey.page,title:survey_ventas_crm.sale_crm_page10
+msgid "Sales Reports"
+msgstr "Informes de Ventas"
+
+#. module: survey_ventas_crm
+#: model:survey.page,title:survey_ventas_crm.sale_crm_page07
+msgid "Sales: Commissions and Sales Agents"
+msgstr "Sales: Commissions and Sales Agents"
+

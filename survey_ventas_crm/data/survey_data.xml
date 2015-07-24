@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <!-- ENCUESTA -->
+    <data>
+        <record model="survey.survey" id="sale_crm_survey">
+            <field name="title">Sales &amp; CRM</field>
+            <field name="stage_id" ref="survey.stage_in_progress" />
+            <field name="auth_required" eval="False" />
+            <field name="users_can_go_back" eval="True" />
+        </record>
+    </data>
+
+    <!-- PAGINA 1 -->
+    <data>
+        <record model="survey.page" id="sale_crm_page01">
+            <field name="title">Sale: Clients</field>
+            <field name="survey_id" ref="sale_crm_survey" />
+            <field name="sequence">1</field>
+        </record>
+        <record model="survey.question" id="sale_crm_p01_q1">
+            <field name="page_id" ref="sale_crm_page01" />
+            <field name="sequence">1</field>
+            <field name="question">Estimated client volume</field>
+            <field name="type">free_text</field>
+            <field name="constr_mandatory" eval="True" />
+        </record>
+        <record model="survey.question" id="sale_crm_p01_q2">
+            <field name="page_id" ref="sale_crm_page01" />
+            <field name="sequence">2</field>
+            <field name="question">Client Coding</field>
+            <field name="type">free_text</field>
+            <field name="constr_mandatory" eval="True" />
+        </record>
+        <record model="survey.question" id="sale_crm_p01_q3">
+            <field name="page_id" ref="sale_crm_page01" />
+            <field name="sequence">3</field>
+            <field name="question">Client General Data</field>
+            <field name="type">free_text</field>
+            <field name="constr_mandatory" eval="True" />
+        </record>
+        <record model="survey.question" id="sale_crm_p01_q4">
+            <field name="page_id" ref="sale_crm_page01" />
+            <field name="sequence">4</field>
+            <field name="question">Client Categories</field>
+            <field name="type">free_text</field>
+            <field name="constr_mandatory" eval="True" />
+        </record>
+        <record model="survey.question" id="sale_crm_p01_q5">
+            <field name="page_id" ref="sale_crm_page01" />
+            <field name="sequence">5</field>
+            <field name="question">Client contacts</field>
+            <field name="type">free_text</field>
+            <field name="constr_mandatory" eval="True" />
+        </record>
+        <record model="survey.question" id="sale_crm_p01_q6">
+            <field name="page_id" ref="sale_crm_page01" />
+            <field name="sequence">6</field>
+            <field name="question">My customers company structure</field>
+            <field name="type">free_text</field>
+            <field name="constr_mandatory" eval="True" />
+        </record>
+        <record model="survey.question" id="sale_crm_p01_q7">
+            <field name="page_id" ref="sale_crm_page01" />
+            <field name="sequence">7</field>
+            <field name="question">Data related to this structure</field>
+            <field name="type">free_text</field>
+            <field name="constr_mandatory" eval="True" />
+        </record>
+        <record model="survey.question" id="sale_crm_p01_q8">
+            <field name="page_id" ref="sale_crm_page01" />
+            <field name="sequence">8</field>
+            <field name="question">Customer site</field>
+            <field name="type">free_text</field>
+            <field name="constr_mandatory" eval="True" />
+        </record>
+        <record model="survey.question" id="sale_crm_p01_q9">
+            <field name="page_id" ref="sale_crm_page01" />
+            <field name="sequence">9</field>
+            <field name="question">Addresses and types of addresses (headquarters, store, administration office...)</field>
+            <field name="type">free_text</field>
+            <field name="constr_mandatory" eval="True" />
+        </record>
+        <record model="survey.question" id="sale_crm_p01_q10">
+            <field name="page_id" ref="sale_crm_page01" />
+            <field name="sequence">10</field>
+            <field name="question">Payment types. Customer invoicing terms</field>
+            <field name="type">free_text</field>
+            <field name="constr_mandatory" eval="True" />
+        </record>
+        <record model="survey.question" id="sale_crm_p01_q11">
+            <field name="page_id" ref="sale_crm_page01" />
+            <field name="sequence">11</field>
+            <field name="question">Banks</field>
+            <field name="type">free_text</field>
+            <field name="constr_mandatory" eval="True" />
+        </record>
+        <record model="survey.question" id="sale_crm_p01_q12">
+            <field name="page_id" ref="sale_crm_page01" />
+            <field name="sequence">12</field>
+            <field name="question">Are there particular customers or do you only sell to businesses?</field>
+            <field name="type">free_text</field>
+            <field name="constr_mandatory" eval="True" />
+        </record>
+        <record model="survey.question" id="sale_crm_p01_q13">
+            <field name="page_id" ref="sale_crm_page01" />
+            <field name="sequence">13</field>
+            <field name="question">Do customers have credit and how it is controlled?</field>
+            <field name="type">simple_choice</field>
+            <field name="constr_mandatory" eval="True" />
+            <field name="comments_allowed" eval="True" />
+            <field name="comments_message">Observations</field>
+        </record>
+        <record model="survey.label" id="sale_crm_p01_q13_a1">
+            <field name="question_id" ref="sale_crm_p01_q13" />
+            <field name="sequence">1</field>
+            <field name="value">Yes</field>
+        </record>
+        <record model="survey.label" id="sale_crm_p01_q13_a2">
+            <field name="question_id" ref="sale_crm_p01_q13" />
+            <field name="sequence">2</field>
+            <field name="value">No</field>
+        </record>
+        <record model="survey.question" id="sale_crm_p01_q14">
+            <field name="page_id" ref="sale_crm_page01" />
+            <field name="sequence">14</field>
+            <field name="question">Do you work with credit and surety?</field>
+            <field name="type">simple_choice</field>
+            <field name="constr_mandatory" eval="True" />
+            <field name="comments_allowed" eval="True" />
+            <field name="comments_message">Observations</field>
+        </record>
+        <record model="survey.label" id="sale_crm_p01_q14_a1">
+            <field name="question_id" ref="sale_crm_p01_q14" />
+            <field name="sequence">1</field>
+            <field name="value">Yes</field>
+        </record>
+        <record model="survey.label" id="sale_crm_p01_q14_a2">
+            <field name="question_id" ref="sale_crm_p01_q14" />
+            <field name="sequence">2</field>
+            <field name="value">No</field>
+        </record>
+    </data>
+
+    <!-- PAGINA 2 -->
+    <data>
+        <record model="survey.page" id="sale_crm_page02">
+            <field name="title">Sale: Products</field>
+            <field name="survey_id" ref="sale_crm_survey" />
+            <field name="sequence">2</field>
+        </record>
+        <record model="survey.question id="sale_crm_p02_q1">
+            <field name="page_id" ref="sale_crm_page02" />
+            <field name="sequence">1</field>
+            <field name="question">Assistants and date</field>
+            <field name="constr_mandatory" eval="True" />
+            <field name="type">free_text</field>
+        </record>
+        <record model="survey.question id="sale_crm_p02_q2">
+        </record>
+        <record model="survey.question id="sale_crm_p02_q3">
+        </record>
+        <record model="survey.question id="sale_crm_p02_q4">
+        </record>
+        <record model="survey.question id="sale_crm_p02_q5">
+        </record>
+        <record model="survey.question id="sale_crm_p02_q6">
+        </record>
+        <record model="survey.question id="sale_crm_p02_q7">
+        </record>
+        <record model="survey.question id="sale_crm_p02_q8">
+        </record>
+        <record model="survey.question id="sale_crm_p02_q9">
+        </record>
+        <record model="survey.question id="sale_crm_p02_q10">
+        </record>
+        <record model="survey.question id="sale_crm_p02_q11">
+        </record>
+    </data>
+
+    <!-- PAGINA 3 -->
+    <data>
+        <record model="survey.page" id="sale_crm_page03">
+            <field name="title">CRM: Presale</field>
+            <field name="survey_id" ref="sale_crm_survey" />
+            <field name="sequence">3</field>
+        </record>
+    </data>
+
+    <!-- PAGINA 4 -->
+    <data>
+        <record model="survey.page" id="sale_crm_page04">
+            <field name="title">CRM: Aftersale</field>
+            <field name="survey_id" ref="sale_crm_survey" />
+            <field name="sequence">4</field>
+        </record>
+    </data>
+
+    <!-- PAGINA 5 -->
+    <data>
+        <record model="survey.page" id="sale_crm_page05">
+            <field name="title">Sales Reports</field>
+            <field name="survey_id" ref="sale_crm_survey" />
+            <field name="sequence">5</field>
+        </record>
+    </data>
+
+    <!-- PAGINA 6 -->
+    <data>
+        <record model="survey.page" id="sale_crm_page06">
+            <field name="title">Pricelists, Offers and Special Discounts</field>
+            <field name="survey_id" ref="sale_crm_survey" />
+            <field name="sequence">6</field>
+        </record>
+    </data>
+
+    <!-- PAGINA 7 -->
+    <data>
+        <record model="survey.page" id="sale_crm_page07">
+            <field name="title">Sales: Commissions and Sales Agents</field>
+            <field name="survey_id" ref="sale_crm_survey" />
+            <field name="sequence">07</field>
+        </record>
+    </data>
+
+    <!-- PAGINA 8 -->
+    <data>
+        <record model="survey.page" id="sale_crm_page08">
+            <field name="title">Sales Future Processes</field>
+            <field name="survey_id" ref="sale_crm_survey" />
+            <field name="sequence">08</field>
+        </record>
+        <record model="survey.question" id="sale_crm_p08_q1">
+            <field name="page_id" ref="sale_crm_page08" />
+            <field name="sequence">1</field>
+            <field name="question">Sales opportunities</field>
+            <field name="type">free_text</field>
+            <field name="constr_mandatory" eval="True" />
+        </record>
+        <record model="survey.question" id="sale_crm_p08_q2">
+            <field name="page_id" ref="sale_crm_page08" />
+            <field name="sequence">2</field>
+            <field name="question">Quotation management</field>
+            <field name="type">free_text</field>
+            <field name="constr_mandatory" eval="True" />
+        </record>
+        <record model="survey.question" id="sale_crm_p08_q3">
+            <field name="page_id" ref="sale_crm_page08" />
+            <field name="sequence">3</field>
+            <field name="question">Sale order management</field>
+            <field name="type">free_text</field>
+            <field name="constr_mandatory" eval="True" />
+        </record>
+        <record model="survey.question" id="sale_crm_p08_q4">
+            <field name="page_id" ref="sale_crm_page08" />
+            <field name="sequence">4</field>
+            <field name="question">Sales Reports</field>
+            <field name="type">free_text</field>
+            <field name="constr_mandatory" eval="True" />
+        </record>
+    </data>
+
+    <!-- PAGINA 9 -->
+    <data>
+        <record model="survey.page" id="sale_crm_page09">
+            <field name="title">Sale Data Migration</field>
+            <field name="survey_id" ref="sale_crm_survey" />
+            <field name="sequence">10</field>
+        </record>
+        <record model="survey.question" id="sale_crm_p09_q1">
+            <field name="page_id" ref="sale_crm_page09" />
+            <field name="sequence">1</field>
+            <field name="question">Sale Data Migration</field>
+            <field name="type">free_text</field>
+            <field name="constr_mandatory" eval="True" />
+        </record>
+    </data>
+
+    <!-- PAGINA 10 -->
+    <data>
+        <record model="survey.page" id="sale_crm_page10">
+            <field name="title">Sales Reports</field>
+            <field name="survey_id" ref="sale_crm_survey" />
+            <field name="sequence">10</field>
+        </record>
+        <record model="survey.question" id="sale_crm_p10_q1">
+            <field name="page_id" ref="sale_crm_page10" />
+            <field name="sequence">1</field>
+            <field name="question">Sales Reports</field>
+            <field name="type">free_text</field>
+            <field name="constr_mandatory" eval="True" />
+        </record>
+    </data>
+</openerp>
